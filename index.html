@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>phone-server</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 640px; margin: 40px auto; padding: 0 16px; line-height: 1.5; color: #222; }
+    h1 { font-size: 1.6em; }
+    h2 { font-size: 1.15em; margin-top: 2em; }
+  </style>
+</head>
+<body>
+  <h1>phone-server</h1>
+  <p>
+    phone-server je soukromá aplikace pro jednoho uživatele. Zálohuje data
+    domácích aplikací běžících na vlastním telefonu do Google Disku
+    uživatele pomocí nástroje rclone.
+  </p>
+
+  <h2>Zásady ochrany soukromí</h2>
+  <p>
+    Aplikace přistupuje jen k souborům, které sama na Google Disku vytvořila
+    (oprávnění <code>drive.file</code>). Data jsou před nahráním šifrovaná.
+    Žádná data nesdílí s třetími stranami, neanalyzuje je ani je neposílá
+    nikam jinam než do Google Disku svého uživatele. Přístup lze kdykoli
+    zrušit v nastavení účtu Google (Zabezpečení → Aplikace třetích stran).
+  </p>
+
+  <h2>Privacy policy</h2>
+  <p>
+    phone-server is a private single-user app that backs up the owner's own
+    data to the owner's Google Drive using rclone. It only accesses files it
+    created (<code>drive.file</code> scope), encrypts data before upload and
+    does not share, analyze or transfer any data to third parties.
+  </p>
+</body>
+</html>
